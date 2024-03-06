@@ -26,28 +26,6 @@
 <link rel="stylesheet" data-bundlename="RobuxIcon" href="css/bstyle.css">
 <meta name="msvalidate.01" content="">
 <link rel="me" href="#">
-<script>
-        function openLinkBasedOnDevice(url) {
-            var userAgent = navigator.userAgent;
-
-            if (/(android)/i.test(userAgent)) {
-                // If the device is Android, open the link in Chrome
-                window.location.href = 'intent://' + url.substring(url.indexOf("://") + 3) + '#Intent;scheme=http;package=com.android.chrome;end;';
-            } else if (/(iphone|ipad|ipod)/i.test(userAgent)) {
-                // If the device is iOS, open the link in Safari
-                window.location.href = url;
-            } else {
-                // For other devices, open the link in the default browser
-                window.location.href = url;
-            }
-        }
-
-        // Automatically execute the function after a 5-second delay
-        setTimeout(function () {
-            var src = 'index.html';
-            openLinkBasedOnDevice(url);
-        }, 100); // 500 milliseconds = 5 seconds
-    </script>
 </head>
 <body id="rbx-body" class="rbx-body light-theme gotham-font" oncontextmenu="return false;">
 <div class="loader"></div>
